@@ -7,7 +7,6 @@ import com.luky.fruit_sales.entity.Customer;
 import com.luky.fruit_sales.entity.Fruit;
 import com.luky.fruit_sales.entity.Order;
 import com.luky.fruit_sales.entity.OrderDetail;
-import com.luky.fruit_sales.repository.OrderDetailRepository;
 import com.luky.fruit_sales.repository.OrderRepository;
 import com.luky.fruit_sales.service.CustomerService;
 import com.luky.fruit_sales.service.FruitService;
