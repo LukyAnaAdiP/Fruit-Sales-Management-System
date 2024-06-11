@@ -3,10 +3,7 @@ package com.luky.fruit_sales.entity;
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.luky.fruit_sales.constant.ConstantTable;
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 @Getter
 @Setter
@@ -14,6 +11,7 @@ import lombok.Setter;
 @NoArgsConstructor
 @Entity
 @Table(name = ConstantTable.ORDER_DETAIL)
+@Builder
 public class OrderDetail {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)

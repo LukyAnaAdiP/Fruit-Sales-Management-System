@@ -3,10 +3,7 @@ package com.luky.fruit_sales.entity;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import com.luky.fruit_sales.constant.ConstantTable;
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import java.util.Date;
 import java.util.List;
@@ -17,6 +14,7 @@ import java.util.List;
 @NoArgsConstructor
 @Entity
 @Table(name = ConstantTable.ORDER)
+@Builder
 public class Order {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
@@ -35,6 +33,6 @@ public class Order {
     private Date orderDate;
 
     @Column(name = "total_amount")
-    private Integer totalAmount;
+    private Long totalAmount;
 
 }
